@@ -41,7 +41,7 @@ function App() {
           "Content-type": "application/json"
         }
       }
-      const response = await fetch('http://localhost:3001/images', options);
+      const response = await fetch('https://dalle-clone-bjvz.onrender.com/images', options);
       console.log(response.status);
       if (response.status === 400) {
         setError("Unable To Generate Images From Description!");
